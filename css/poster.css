@@ -7,7 +7,7 @@
 }
 
 html {
-    font-family: font-family: 'Roboto', sans-serif;
+    font-family: font-family 'Roboto', sans-serif;
     color: #151515;
 }
 
@@ -27,10 +27,44 @@ html {
 @keyframes slide-from-top {
     100% {transform: translateY(0);}
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(61, 54, 54, 0.413);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color:bisque
+    margin; 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 350px;
+}
+
+
+
 .movie-poster-container img {
     margin-top: 2rem;
     height: 500px;
     border-radius:5%;
+    cursor: pointer;
     /*add for animation*/
     position: relative;
     left: -50rem;
